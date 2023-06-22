@@ -8,14 +8,17 @@ public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		PrintService pr = new PrintService();
+
+		// parametrização do tipo desejado
+
+		PrintService<Integer> pr = new PrintService();
 		System.out.print("How many values: ");
 		int n = sc.nextInt();
 
 		for (int i = 0; i < n; i++) {
-			System.out.println("Entre com um numero:");
-			int numbers = sc.nextInt();
-			pr.addValue(numbers);
+			System.out.println("Entre com os dados desejados:");
+			int lista = sc.nextInt();
+			pr.addValue(lista);
 
 		}
 
