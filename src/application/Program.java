@@ -9,9 +9,9 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// parametrização do tipo desejado
+		// parametrização do tipo desejado quando instaciamos a classe
 
-		PrintService<Integer> pr = new PrintService();
+		PrintService<Integer> pr = new PrintService<>();
 		System.out.print("How many values: ");
 		int n = sc.nextInt();
 
