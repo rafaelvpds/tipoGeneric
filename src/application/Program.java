@@ -16,7 +16,7 @@ public class Program {
 		int n = sc.nextInt();
 
 		for (int i = 0; i < n; i++) {
-			System.out.println("Entre com os dados desejados:");
+			System.out.println("Values:");
 			int lista = sc.nextInt();
 			pr.addValue(lista);
 

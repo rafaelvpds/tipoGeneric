@@ -11,6 +11,7 @@ public class PrintService<T> {
 	}
 
 	public T first() {
+		// Verificando se a lista esta vaizia
 		if (list.isEmpty()) {
 			throw new IllegalStateException("List is empty");
 		}
@@ -19,8 +20,12 @@ public class PrintService<T> {
 
 	public void print() {
 
-		for (T number : list) {
-			System.out.println(number);
+		if (!list.isEmpty()) {
+			System.out.println("[");
+			for (int i = 0; i < list.size(); i++) {
+				System.out.println(", " + list.get(i));
+			}
+			System.out.println("]");
 		}
 
 	}
